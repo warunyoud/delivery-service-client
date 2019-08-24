@@ -26,7 +26,7 @@ class FormView extends Component {
   }
 
   isInputValid() {
-    for (let item in this.props.dimension) {
+    for (item in this.props.dimension) {
       if (this.props.dimension[item].isRequired && this.state.selectedValue[item] === '') {
         return false;
       }

@@ -87,7 +87,7 @@ class Main extends Component {
       if (graphId)
       {
         this.getAllGraphs(() => {
-          const index = this.state.allGraphs.findIndex((item) => item._id == graphId);
+          const index = this.state.allGraphs.findIndex((item) => item._id === graphId);
           this.setGraph(index);
           this.setState({ graphInput: '' });
         });
