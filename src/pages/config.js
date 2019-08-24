@@ -2,7 +2,7 @@ const config =
   [
     {
       title: 'Route Cost',
-      description: 'Calculate the delivery cost of the given delivery route',
+      description: 'Calculate the delivery cost of the given delivery route. Input the nodes separated by a dash (e.g. A-B-E)',
       pullURL: '/api/getRouteCost',
       dimension:{
         route: {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import './Main.css';
 import { TableView, GraphView, FormView } from '../components';
 import config from './config';
@@ -90,6 +89,7 @@ class Main extends Component {
         this.getAllGraphs(() => {
           const index = this.state.allGraphs.findIndex((item) => item._id == graphId);
           this.setGraph(index);
+          this.setState({ graphInput: '' });
         });
       } else {
         alert("Invalid Graph!!");
